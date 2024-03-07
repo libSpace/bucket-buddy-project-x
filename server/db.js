@@ -6,6 +6,6 @@ const pool = new Pool({
     host: "localhost",
     port: 5432,
     database: "busket_buddy"
-})
+});
 
-module.exports = pool
+module.exports = pool;

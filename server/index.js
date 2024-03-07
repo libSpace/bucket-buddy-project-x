@@ -9,8 +9,8 @@ const cors = require("cors");
 
 
 
-// Set the port number to 3000
-const port = 3000;
+// Set the port number to 5000
+const port = 5000;
 
 
 //middleware
@@ -22,7 +22,7 @@ app.use(cors());
 
 //ROUTES
 //Register and Login routes
-app.use("/auth", require("./jwtAuth"))
+app.use("/auth", require("./jwtAuth"));
 
 
 
@@ -31,5 +31,5 @@ app.use("/auth", require("./jwtAuth"))
 // Define a route for the root URL
 app.get('/', (req, res) => res.send('Hello World!'));
 
-// Start the application and listen on port 3000
-app.listen(port, () => console.log(`Bucket buddy app listening on port ${port}!`));
+// Start the application and listen on port 5000
+app.listen(port, () => console.log(`Bucket buddy app listening on port: ${port}`));
